@@ -8,7 +8,7 @@ ABL2Java is a command-line tool that automates the conversion of legacy Progress
 
 ## Features
 
-- Converts `.p`, `.cls`, `.w`, `.i`, and `.t` ABL source files to Java 17
+- Converts `.p`, `.cls`, `.w`, and `.i` ABL source files to Java 17
 - Preserves procedure and function names where possible
 - Replaces Progress-specific constructs with modern Java equivalents
 - Adds Javadoc comments to all public methods
