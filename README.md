@@ -44,10 +44,8 @@ ollama serve
 # Clone the repository
 git clone https://github.com/your-username/abl2java.git
 cd abl2java
-
-No additional dependencies required — the script uses only the Python standard library.
 ```
-
+No additional dependencies required — the script uses only the Python standard library.
 ---
 
 ## Configuration
