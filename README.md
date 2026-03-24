@@ -116,24 +116,10 @@ Found 3 file(s)
 ```
 abl2java/
 ├── README.md
-├── .env.example
-├── .env                  # your local config (gitignored)
 ├── .gitignore
-├── requirements.txt
-│
-├── converter/
-│   ├── __init__.py
-│   ├── abl2javaconverter.py
-│   ├── prompts.py
-│   └── utils.py
-│
-├── samples/              # place your .p, .cls, .w, .i, .t files here
-│
-├── java_output/          # generated Java files (gitignored)
-│
-└── tests/
-    ├── __init__.py
-    └── test_converter.py
+├── abl2javaconverter.py
+├── samples/              # place your .p, .cls, .w, .i, .t files here (gitignored)
+└── java_output/          # generated Java files (gitignored)
 ```
 
 ---
