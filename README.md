@@ -8,7 +8,7 @@ ABL2Java is a command-line tool that automates the conversion of legacy Progress
 
 ## Features
 
-- Converts `.p`, `.cls`, `.w`, and `.i` ABL source files to Java 17
+- Converts `.p`, `.cls`, `.w`, `.i`, and `.t` ABL source files to Java 17
 - Preserves procedure and function names where possible
 - Replaces Progress-specific constructs with modern Java equivalents
 - Adds Javadoc comments to all public methods
@@ -45,20 +45,24 @@ ollama serve
 git clone https://github.com/your-username/abl2java.git
 cd abl2java
 ```
+
 No additional dependencies required — the script uses only the Python standard library.
+
 ---
 
 ## Configuration
 
-Configuration is currently hardcoded at the top of `abl2javaconverter.py`:
+Configuration is hardcoded at the top of `abl2javaconverter.py`:
 
 | Variable | Default | Description |
 |---|---|---|
-| `OLLAMA_URL` | `http://localhost:11434/api/generate` | Ollama API endpoint |
 | `MODEL` | `qwen2.5-coder:3b` | Model to use for conversion |
+| `OLLAMA_URL` | `http://localhost:11434/api/generate` | Ollama API endpoint |
 | `TIMEOUT` | `300` | Request timeout in seconds |
 | `SAMPLES_DIR` | `./samples` | Directory containing ABL source files |
 | `OUTPUT_DIR` | `./java_output` | Directory for generated Java files |
+
+To change any of these, edit the values at the top of the file directly.
 
 ---
 
@@ -68,7 +72,7 @@ Configuration is currently hardcoded at the top of `abl2javaconverter.py`:
 2. Run the converter:
 
 ```bash
-abl2javaconverter.py
+python abl2javaconverter.py
 ```
 
 3. Converted Java files will appear in `java_output/`
@@ -112,9 +116,10 @@ abl2java/
 ├── README.md
 ├── .gitignore
 ├── abl2javaconverter.py
-├── samples/              # place your .p, .cls, .w, .i files here (gitignored)
-└── java_output/          # generated Java files (gitignored)
+└── samples/              # place your .p, .cls, .w, .i, .t files here
 ```
+
+`java_output/` is created automatically when the converter runs.
 
 ---
 
