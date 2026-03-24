@@ -74,7 +74,7 @@ All configuration is handled via the `.env` file. The defaults work out of the b
 2. Run the converter:
 
 ```bash
-python converter/abl2javaconverter.py
+abl2javaconverter.py
 ```
 
 3. Converted Java files will appear in `java_output/`
