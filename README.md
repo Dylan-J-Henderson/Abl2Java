@@ -116,7 +116,7 @@ abl2java/
 ├── README.md
 ├── .gitignore
 ├── abl2javaconverter.py
-└── samples/              # place your .p, .cls, .w, .i files here
+└── samples/              # place your .p, .cls, .w, .i files here (gitignore)
 ```
 
 `java_output/` is created automatically when the converter runs.
