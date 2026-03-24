@@ -45,11 +45,7 @@ ollama serve
 git clone https://github.com/your-username/abl2java.git
 cd abl2java
 
-# Install Python dependencies
-pip install -r requirements.txt
-
-# Set up your config
-cp .env.example .env
+No additional dependencies required — the script uses only the Python standard library.
 ```
 
 ---
