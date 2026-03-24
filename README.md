@@ -56,7 +56,7 @@ cp .env.example .env
 
 ## Configuration
 
-All configuration is handled via the `.env` file. The defaults work out of the box:
+Configuration is currently hardcoded at the top of `abl2javaconverter.py`:
 
 | Variable | Default | Description |
 |---|---|---|
