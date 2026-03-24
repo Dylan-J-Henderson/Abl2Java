@@ -118,7 +118,7 @@ abl2java/
 ├── README.md
 ├── .gitignore
 ├── abl2javaconverter.py
-├── samples/              # place your .p, .cls, .w, .i, .t files here (gitignored)
+├── samples/              # place your .p, .cls, .w, .i files here (gitignored)
 └── java_output/          # generated Java files (gitignored)
 ```
 
